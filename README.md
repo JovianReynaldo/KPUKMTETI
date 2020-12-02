@@ -1,7 +1,9 @@
-# KPUKMTETI
+<h1> KPUKMTETI </h1>
 
-- close -> close vote page
-- dev
-- prod
+Website Pemilu KMTETI 2020
+1. web hari h + countdown
+2. web tutup vote
 
-<pre> @ IT KPU KMTETI 2020</pre>
+preview: <a href="https://jovianreynaldo.github.io/KPUKMTETI/"> web tutup vote </a>
+
+<pre> @ Tim IT KPU KMTETI 2020</pre>
