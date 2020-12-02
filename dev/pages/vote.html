@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+    <!-- Icon -->
+    <link rel="icon" href="../img/logo_kpu.png">
+
+    <!--  CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/vote.css">
+
+    <title>Vote Now | KPU KMTETI 2020</title>
+</head>
+<body>
+    <!-- nav  -->
+    <nav class="navbar navbar-expand-lg bg-nav text-uppercase fixed-top" id="mainNav">
+        <div class="container col-lg-11">
+            <div class="navbar-brand js-scroll-trigger">
+                <img class="logo-brand-kmteti" src="../img/logo_kmteti.png" alt="" />
+                <img class="logo logo-brand" src="../img/logo_kpu.png" alt="" />
+            </div>
+            <a class="navbar-brand js-scroll-trigger brand-title" href="../">KPU KMTETI 2020</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="../">Home</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="calon.html">Calon</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="about.html">About us</a></li>  
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#" onclick="logout()">logout</a></li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Header-->
+    <header class="masthead text-center">
+        <div class="judul">
+            <h1>Pemungutan Suara Calon Ketua KMTETI</h1>
+            <h2>silakan pilih calon pilihan anda</h2>
+        </div>
+    </header>
+    
+    <!-- Calon -->
+    <section class="calon-section">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img data-toggle="modal" data-target="#calon2Modal" class="calon-img" src="../img/calon/ilham.png" />
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img data-toggle="modal" data-target="#calon3Modal" class="calon-img" src="../img/calon/maul.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- form  -->
+    <section>
+        <form id="formToken" method="POST">
+            <input type="text" id="email" name="entry.1496207511" style="display: none"/>
+            <input type="text" id="tokenku" name="entry.1690526346" style="display: none" /> 
+        </form>
+        <form id="formVote" method="POST">
+            <input type="text" id="token" name="entry.2006784659" style="display: none"/>
+            <input type="text" id="vote" name="entry.431122322" style="display: none" /> 
+        </form>
+    </section>
+    <!-- ./form  -->
+    <!-- Copyright Section-->
+    <div class="copyright py-3 text-center text-white">
+        <div class="container"><small>© 2020. <span style="font-weight: bold;">IT KPU KMTETI</span></small></div>
+    </div> 
+    <!-- ./Copyright Section-->
+</body>
+
+<!-- Modal calon 2-->
+<div class="modal fade" id="calon2Modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"> 
+                <h2 class="text-center">PERHATIAN</h2>
+                <h2 class="text-center">Anda Memilih Calon No 2</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="card calon-foto">
+                            <div class="card-body text-center">
+                                <img class="calon-img-modal" src="../img/calon/ilham.png" />
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="modal-footer"> 
+                <button class="button-vote btn btn-xl col-lg-12 col-xs-12 col-sm-12 col-md-12" 
+                        style="border: 0"
+                        onclick="vote2()">
+                    <h4 style="font-weight: bold;">VOTE</h4>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal calon 3-->
+<div class="modal fade" id="calon3Modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"> 
+                <h2 class="text-center">PERHATIAN</h2>
+                <h2 class="text-center">Anda Memilih Calon No 3</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="card calon-foto">
+                            <div class="card-body text-center">
+                                <img class="calon-img-modal" src="../img/calon/maul.png" />
+                            </div>
+                        </div> 
+                    </div> 
+                </div>
+            </div>
+            <div class="modal-footer"> 
+                <button class="button-vote btn btn-xl col-lg-12 col-xs-12 col-sm-12 col-md-12" 
+                        style="border: 0"
+                        onclick="vote3()">
+                    <h4 style="font-weight: bold;">VOTE</h4>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- firebase -->
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+
+<!-- Vendor JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+<!-- jqure & sweetalert -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<!-- custom js -->
+<script src="../js/index.js"></script>
+<script src="../js/vote.js"></script>
+
+</html>

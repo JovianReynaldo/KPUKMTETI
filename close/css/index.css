@@ -1,0 +1,215 @@
+.bg-primary {
+  background-color: #0099B0 !important;
+}
+
+.logo{
+    border-radius: 50%;
+    max-width: 200px;
+}
+
+.bg-nav {
+  background-color: #00587F !important;
+}
+
+.nav-active{
+  color: #fff;
+  background: #0099B0;
+}
+ 
+#mainNav .logo-brand {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  max-width: 47px;
+  transition: 0.3s;
+}
+
+#mainNav.navbar-shrink .logo-brand {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  max-width: 45px;
+}
+
+#mainNav .logo-brand-kmteti {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  max-width: 37px;
+  transition: 0.3s;
+}
+
+#mainNav.navbar-shrink .logo-brand-kmteti {
+  margin-top: -20px;
+  margin-bottom: -20px;
+  max-width: 35px;
+}
+
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 700;
+  transition: padding-top 0.3s, padding-bottom 0.3s;
+}
+#mainNav .navbar-brand {
+  color: #fff;
+  font-size: 1em;
+  transition: font-size 0.3s;
+}
+#mainNav.navbar-shrink {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
+}
+#mainNav .navbar-nav {
+  margin-top: 1rem;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #0099B0;
+}
+
+#mainNav .navbar-nav li.nav-active a.nav-link:hover {
+  color: #01d4f5;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #fff;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #0099B0;
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.8rem;
+}
+@media (max-width: 370px) {
+  #mainNav .navbar-brand {
+    color: #fff;
+    font-size: 0.8em;
+    transition: font-size 0.3s;
+  }
+
+  #mainNav .logo-brand {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 40px;
+    transition: 0.3s;
+  }
+  
+  #mainNav.navbar-shrink .logo-brand {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 40px;
+  }
+  
+  #mainNav .logo-brand-kmteti {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 30px;
+    transition: 0.3s;
+  }
+  
+  #mainNav.navbar-shrink .logo-brand-kmteti {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 30px;
+  }
+
+  #mainNav .navbar-toggler {
+    font-size: 50%;
+    padding: 0.5rem;
+  }
+
+}
+
+@media (min-width: 500px) {
+  #mainNav .navbar-brand {
+    color: #fff;
+    font-size: 1.5em;
+    transition: font-size 0.3s;
+  }
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    transition: font-size 0.3s;
+  }
+  #mainNav .navbar-nav {
+    margin-top: 0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
+    color: #fff;
+    background: #0099B0;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
+    color: #fff;
+    background: #0099B0;
+  }
+
+  #mainNav.navbar-shrink {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.5em;
+  }
+
+  #mainNav .logo-brand {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 80px;
+    transition: 0.3s;
+  }
+
+  #mainNav.navbar-shrink .logo-brand {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 50px;
+  }
+
+  #mainNav .logo-brand-kmteti {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 60px;
+    transition: 0.3s;
+  }
+
+  #mainNav.navbar-shrink .logo-brand-kmteti {
+    margin-top: -20px;
+    margin-bottom: -20px;
+    max-width: 40px;
+  }
+}
+a.bg-primary:focus, a.bg-primary:hover, button.bg-primary:focus, button.bg-primary:hover {
+  background-color: #0099B0!important;
+} 
+
+.footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #00374e;
+  color: #fff;
+}
+
+.copyright {
+  background-color: #001d29;
+}
+
+.parallax{
+  background-image: url("../img/background-mobile.jpg");
+  background-attachment: fixed;
+}
+
+@media (min-width: 992px) {
+  .parallax {
+    background-image: url("../img/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+  }
+}
